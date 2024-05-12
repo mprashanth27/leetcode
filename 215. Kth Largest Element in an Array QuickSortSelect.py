@@ -32,4 +32,4 @@ class Solution:
         return nums[k]
     
 obj = Solution()
-print(obj.findKthLargest([5,2,3,1],2))
+print(obj.findKthLargest([4,2,7,6,5],2))
