@@ -1,4 +1,3 @@
-from random import randint
 class Solution:
     def findKthLargest(self, nums: list[int], k: int) -> int:
         #adaptation of Nc's Sol [Quick Select Algo.] by modifying my quicksort code 
@@ -8,8 +7,8 @@ class Solution:
                 return
             
             def partition(A, l, r):
-                randIndex = randint(0, r - l) + l
-                A[randIndex], A[r] = A[r], A[randIndex] #moving the rand element to the end for comparsion
+                pivotIndex = (l + r) // 2 
+                A[pivotIndex], A[r] = A[r], A[pivotIndex] #moving the rand element to the end for comparsion
                 pivot = A[r]
                 nextSwapped = l # Writer ptr ~ element to swap with 
                 for i in range(l, r):
