@@ -20,6 +20,6 @@ class Solution:
                 i -= 1
 
 obj = Solution()
-nums = [2,0,2,1,1,0]
+nums = [2,0,1]
 obj.sortColors(nums)
 print(nums)
