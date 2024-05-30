@@ -13,7 +13,7 @@ class Solution:
                     i += 1
                 if (time <= 0):
                     break
-            if (i == len(piles) and time >= 0): # not using len(piles)-1 to balance the inc that happens at line 12 before exiting while loop
+            if (i == len(piles) and time >= 0): # not using len(piles)-1 to balance the inc that happens at line 13 before exiting while loop
                 return k
 
 obj = Solution()
