@@ -2,6 +2,7 @@ import collections
 
 class Solution:
     def maxAreaOfIsland(self, grid: list[list[int]]) -> int:
+        # adaptation of NC's 200.NoOfIslandsBFS logic
         if not grid:
             return 0
 
@@ -13,7 +14,7 @@ class Solution:
             q = collections.deque() 
             visit.add((r, c)) 
             q.append((r, c))
-            area = 0
+            area = 1 #  =1 & not 0, as we need to count the 1 we find at line 31
             while q:
                 row, col = q.pop()
                 directions = [[1, 0], [-1, 0], [0, 1], [0, -1]]
